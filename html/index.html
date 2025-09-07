@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/netflix-style.css">
+  <script src="js/netflix-script.js" defer></script>
+</head>
+
+<body class="dark-mode"> 
+  <header id="header" class="header-top">
+    <nav class="top-navigation container">
+      <div class="left-cont">
+        <img src="./images/netflix-logo.png" class="netflix-logo" alt="Netflix Logo">
+        
+        <button id="theme-toggle" class="theme-toggle">☀️ Light Mode</button>
+        
+        <ul class="main-nav">
+          <li class="nav-item active">Home</li>
+          <li class="nav-item">TV Shows</li>
+          <li class="nav-item">Movies</li>
+          <li class="nav-item">New & Popular</li>
+          <li class="nav-item">My List</li>
+          <li class="nav-item">Browse by Languages</li>
+        </ul>
+      </div>
+      <div class="right-cont">
+        <select name="language" id="select-language">
+          <option value="english">English</option>
+          <option value="tamil">Tamil</option>
+          <option value="hindi">Hindi</option>
+          <option value="kannada">Kannada</option>
+          <option value="telugu">Telugu</option>
+        </select>
+        <a href="./homepage.html" class="sign-in">Sign In</a>
+      </div>
+    </nav>
+
+    <div class="homepage-text">
+      <div class="text-content">
+        <h1 class="big-text">Unlimited movies, TV shows and more.</h1>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+      </div>
+      <div class="mail-list">
+        <input type="email" id="email-input" class="email-class" placeholder="Email address">
+        <button type="button" id="get-started">Get Started</button>
+        <p id="email-error" class="error-message"></p>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner-section" id="banner-section">
+    <div class="banner_fadeBottom"></div>
+  </div>
+
+  <section class="movie-section container">
+    <h2>Popular on Netflix</h2>
+    <div class="movie-row">
+      <img src="Images/Avatar.jpeg" alt="Avatar">
+      <img src="Images/3-idiots.jpeg" alt="3-Iditos">
+      <img src="Images/border.jpeg" alt="Border">
+      <img src="Images/DDLJ.jpeg" alt="DDLJ">
+    </div>
+  </section>
+
+  <section class="movie-section container">
+    <h2>Trending Now</h2>
+    <div class="movie-row">
+      <img src="Images/Devara.jpeg" alt="Devara">
+      <img src="Images/Fighter.jpeg" alt="Fighter">
+      <img src="Images/salaar.jpeg" alt="Salaar">
+      <img src="Images/Lagaan.jpeg" alt="Lagaan">
+    </div>
+  </section>
+
+  <section class="faq-section container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <button class="faq-question">What is Netflix?</button>
+      <div class="faq-answer">
+        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, and more.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">How much does Netflix cost?</button>
+      <div class="faq-answer">
+        <p>Plans start at just ₹149 per month. Cancel anytime.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Where can I watch?</button>
+      <div class="faq-answer">
+        <p>You can watch on any device: mobile, tablet, laptop, and smart TV.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <p>Netflix Clone by <strong><a href="https://github.com/vivekyadav72560" target="_blank">Vivek Yadav</a></strong></p>
+    <div class="footer-links">
+      <a href="#">Help Center</a>
+      <a href="#">Jobs</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </footer>
+</body>
+</html>

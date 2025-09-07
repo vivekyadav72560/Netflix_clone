@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.homepage-cover{
+    display: flex;
+    align-items: flex-end;
+    background-image:url(../images/background.jpg);
+    background-size: cover;
+    background-position: top; /* Setting top makes the image clips to the top which reveals the top header(nav bars) clearly */
+    height: 85vh; /* Adjusted to 85% of the viewport height later */
+    cursor: pointer;
+}
+
+.top-nav-class{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin: 15px 30px; 
+}
+
+
+.netflix-logo {
+    width: 90px;
+}
+
+.bell-icon {
+    width: 5px;
+}
+
+.top-nav-icons-class{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;   
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.top-nav-icons-class > button > a {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: black;
+}
+
+.top-nav-icons-class > img {
+    width: 25px;
+    height: 25px;
+}
+
+.top-nav-icons-class > button {
+    white-space: nowrap; /* since the button text gets wrapped due to flex-end property */
+    padding: 3px 5px;
+    font-weight: 700;
+}
+
+.left, .top-nav-text-class{  /* flex the logo and top-left items row wise*/
+    display: flex;
+    align-items: center; /* aligns the logo and other text centered */
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.top-nav-text-class{
+    margin-left: 50px; /* to space between the netflix logo and the top-left text part */
+    gap: 15px;  /* to space between individual text elements of 10px gap */
+
+}
+
+.movies-container{
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.homepage-cover > .bannerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin: 15px;
+    font-size: 25px;
+    background-color: #E50914;
+    padding:  5px 30px;
+    border-radius: 0.4rem;
+    font-family: "Poppins";
+    border: none;
+    font-weight: 900;
+    box-shadow: 0 0 20px 5px black;
+}
+
+.homepage-cover > a > img{
+    margin-left: 5px;
+}
+
+.homepage-cover > a {
+     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.movies-img{
+    display: flex;
+    gap: 30px;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 25px 10px;
+}
+
+.movies-img > img {
+    transition: transform 0.3s;
+}
+
+.movies-img > img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px #E50914;
+    
+}
